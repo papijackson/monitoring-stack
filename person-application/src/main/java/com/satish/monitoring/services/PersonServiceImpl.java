@@ -29,6 +29,8 @@ public class PersonServiceImpl implements PersonService {
 	PersonServiceImpl(PersonRepository personRepo) {
 		this.personRepo = personRepo;
 	}
+
+	private final Function<PersonEntity, Person> personToEntity2 = (personEntity ->  new Person() );
 	
 	/**
 	 * Convert {@link Person} Object to {@link PersonEntity} object Set the
