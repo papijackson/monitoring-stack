@@ -23,4 +23,4 @@ scrape_configs:
     metrics_path: '/actuator/prometheus'
     scrape_interval: 5s
     static_configs:
-    - targets: ['personapp:9000']
+    - targets: ['personapp:9080']
